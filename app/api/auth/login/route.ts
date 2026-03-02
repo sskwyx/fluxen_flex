@@ -1,74 +1,72 @@
 import { NextResponse } from "next/server"
 import { promises as fs } from "fs"
 import path from "path"
-import crypto from "crypto"
+import {
+  verifyPassword,
+  createToken,
+} from "@/lib/auth"
 
 interface User {
   id: string
   username: string
   email: string
   password: string
-  balance: number
-  role?: string
-  createdAt: string
 }
 
-// Hash password using SHA-256
-function hashPassword(password: string): string {
-  return crypto.createHash("sha256").update(password).digest("hex")
-}
-
-// Get path to users data file
 function getUsersFilePath() {
   return path.join(process.cwd(), "data", "users.json")
 }
 
-// Read users from JSON file
 async function readUsers(): Promise<User[]> {
   try {
-    const filePath = getUsersFilePath()
-    const fileData = await fs.readFile(filePath, "utf-8")
-    return JSON.parse(fileData)
-  } catch (error) {
+    const data = await fs.readFile(
+      getUsersFilePath(),
+      "utf-8"
+    )
+    return JSON.parse(data)
+  } catch {
     return []
   }
 }
 
 export async function POST(request: Request) {
-  try {
-    const { email, password } = await request.json()
+  const { email, password } =
+    await request.json()
 
-    // Validate input
-    if (!email || !password) {
-      return NextResponse.json({ error: "Email and password are required" }, { status: 400 })
-    }
+  const users = await readUsers()
 
-    // Read users
-    const users = await readUsers()
+  const user = users.find(
+    u => u.email === email
+  )
 
-    // Find user by email
-    const user = users.find((u) => u.email === email)
-    if (!user) {
-      return NextResponse.json({ error: "Invalid email or password" }, { status: 401 })
-    }
-
-    // Verify password
-    const hashedPassword = hashPassword(password)
-    if (user.password !== hashedPassword) {
-      return NextResponse.json({ error: "Invalid email or password" }, { status: 401 })
-    }
-
-    // Return success (without password)
-    const { password: _, ...userWithoutPassword } = user
+  if (!user)
     return NextResponse.json(
-      {
-        message: "Login successful",
-        user: userWithoutPassword,
-      },
-      { status: 200 },
+      { error: "Invalid credentials" },
+      { status: 401 }
     )
-  } catch (error) {
-    console.error("[v0] Login error:", error)
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 })
-  }
+
+  const valid = await verifyPassword(
+    password,
+    user.password
+  )
+
+  if (!valid)
+    return NextResponse.json(
+      { error: "Invalid credentials" },
+      { status: 401 }
+    )
+
+  const token = createToken(user.id)
+
+  const res = NextResponse.json({
+    message: "Login successful",
+  })
+
+  res.cookies.set("token", token, {
+    httpOnly: true,
+    path: "/",
+    maxAge: 60 * 60 * 24 * 7,
+  })
+
+  return res
 }
