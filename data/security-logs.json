@@ -1,0 +1,452 @@
+[
+  {
+    "id": "mm7ykjcezplb",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2026-03-01T16:22:29.870Z"
+  },
+  {
+    "id": "mm7ykifuzzie",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2026-03-01T16:22:28.698Z"
+  },
+  {
+    "id": "miyqvy4p15bt",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-12-09T15:38:22.729Z"
+  },
+  {
+    "id": "miyqvrat07pq",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-12-09T15:38:13.877Z"
+  },
+  {
+    "id": "mixf1aynexw2",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-12-08T17:18:51.071Z"
+  },
+  {
+    "id": "mixf170xdqu9",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-12-08T17:18:45.969Z"
+  },
+  {
+    "id": "miwxw0t427ed",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": "http://localhost:3000/products",
+    "timestamp": "2025-12-08T09:18:51.160Z"
+  },
+  {
+    "id": "miwxvfwakidv",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": "http://localhost:3000/products",
+    "timestamp": "2025-12-08T09:18:24.058Z"
+  },
+  {
+    "id": "mivzzzlwq6df",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-12-07T17:30:09.284Z"
+  },
+  {
+    "id": "mivzztz64rv1",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-12-07T17:30:01.986Z"
+  },
+  {
+    "id": "miujpvox5yrj",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-12-06T17:06:37.617Z"
+  },
+  {
+    "id": "miujopwzr2zd",
+    "ip": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-12-06T17:05:43.475Z"
+  },
+  {
+    "id": "mikdorwgbkc8",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/138.0.7204.23 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-29T14:20:06.592Z"
+  },
+  {
+    "id": "mid2iaj6hn10",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-24T11:32:45.138Z"
+  },
+  {
+    "id": "mibosmuvie6h",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-23T12:21:06.871Z"
+  },
+  {
+    "id": "miabbim7cgx4",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-22T13:16:07.040Z"
+  },
+  {
+    "id": "mi8wz6ygaclk",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-21T13:46:51.257Z"
+  },
+  {
+    "id": "mi7ljcakw980",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-20T15:38:49.724Z"
+  },
+  {
+    "id": "mi65bfvw224c",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-19T15:17:01.100Z"
+  },
+  {
+    "id": "mi4qyeg3cb91",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 8.0.0; SM-G965U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-18T15:47:11.907Z"
+  },
+  {
+    "id": "mi3etbc2qauv",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-17T17:19:33.026Z"
+  },
+  {
+    "id": "mi1yh0znd63f",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-16T16:54:19.715Z"
+  },
+  {
+    "id": "mi1xl0hzdo9z",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-16T16:29:26.087Z"
+  },
+  {
+    "id": "mi1xkvguvkdr",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Linux; Android 12; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.196 Mobile Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-16T16:29:19.566Z"
+  },
+  {
+    "id": "mi1elf339ydw",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-16T07:37:52.287Z"
+  },
+  {
+    "id": "mi1el735nx1b",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-16T07:37:41.921Z"
+  },
+  {
+    "id": "mi1el50fc9jp",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-16T07:37:39.231Z"
+  },
+  {
+    "id": "mi1el3dhlban",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-16T07:37:37.110Z"
+  },
+  {
+    "id": "mi1ekzgvln9u",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-16T07:37:32.047Z"
+  },
+  {
+    "id": "mi0sjhcoem7y",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T21:20:30.360Z"
+  },
+  {
+    "id": "mi0lkkzgm71i",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T18:05:24.412Z"
+  },
+  {
+    "id": "mi0ivixbxa0s",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:49:56.111Z"
+  },
+  {
+    "id": "mi0iv4ope7pm",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/15E148 Safari/604.1",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:49:37.657Z"
+  },
+  {
+    "id": "mi0iujcm7f1o",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/23C5027f Safari/604.1",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:49:10.006Z"
+  },
+  {
+    "id": "mi0iuf8a5rqn",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Mobile/23C5027f Safari/604.1",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:49:04.666Z"
+  },
+  {
+    "id": "mi0i166bo0jh",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:26:19.907Z"
+  },
+  {
+    "id": "mi0i0x06i2ay",
+    "ip": "::ffff:127.0.0.1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:26:08.022Z"
+  },
+  {
+    "id": "mi0h74y3g9y9",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:58.635Z"
+  },
+  {
+    "id": "mi0h70u0dsyz",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:53.304Z"
+  },
+  {
+    "id": "mi0h702ozouo",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:52.320Z"
+  },
+  {
+    "id": "mi0h6za9z6t8",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:51.297Z"
+  },
+  {
+    "id": "mi0h6y6esnkf",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:49.862Z"
+  },
+  {
+    "id": "mi0h6w8pbqr2",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:02:47.353Z"
+  },
+  {
+    "id": "mi0h4dc6rnkf",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:00:49.542Z"
+  },
+  {
+    "id": "mi0h46skcrp9",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_fail",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:00:41.060Z"
+  },
+  {
+    "id": "mi0h3mtihnph",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T16:00:15.174Z"
+  },
+  {
+    "id": "mi0h2tyhx6d3",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T15:59:37.770Z"
+  },
+  {
+    "id": "mi0h2qeqgr6n",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T15:59:33.170Z"
+  },
+  {
+    "id": "mi0h2c51dvh8",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2025-11-15T15:59:14.677Z"
+  },
+  {
+    "id": "mi0h279gn5ke",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2025-11-15T15:59:08.356Z"
+  }
+]

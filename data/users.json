@@ -1,0 +1,11 @@
+[
+  {
+    "id": "b8af735a-43db-4c7f-83c3-9d7e59b8990e",
+    "username": "123",
+    "email": "1123@gmail.com",
+    "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
+    "balance": 1000000,
+    "role": "admin",
+    "createdAt": "2026-03-01T16:48:43.925Z"
+  }
+]
