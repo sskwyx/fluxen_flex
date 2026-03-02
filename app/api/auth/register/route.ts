@@ -34,22 +34,23 @@ async function writeUsers(users: User[]) {
 }
 
 export async function POST(request: Request) {
-  const { username, email, password } =
-    await request.json()
+  const { username, email, password } = await request.json()
 
-  if (!username || !email || !password)
+  if (!username || !email || !password) {
     return NextResponse.json(
       { error: "All fields required" },
       { status: 400 }
     )
+  }
 
   const users = await readUsers()
 
-  if (users.find(u => u.email === email))
+  if (users.find(u => u.email === email)) {
     return NextResponse.json(
       { error: "Email exists" },
       { status: 400 }
     )
+  }
 
   const newUser: User = {
     id: crypto.randomUUID(),
@@ -64,17 +65,20 @@ export async function POST(request: Request) {
   users.push(newUser)
   await writeUsers(users)
 
-  const token = createToken(newUser.id)
+  // 🔥 ВАЖНО: await
+  const token = await createToken(newUser.id)
 
-  const res = NextResponse.json({
+  const response = NextResponse.json({
     message: "Registered",
   })
 
-  res.cookies.set("token", token, {
+  response.cookies.set("token", token, {
     httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
   })
 
-  return res
+  return response
 }

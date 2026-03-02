@@ -30,43 +30,52 @@ async function readUsers(): Promise<User[]> {
 }
 
 export async function POST(request: Request) {
-  const { email, password } =
-    await request.json()
+  const { email, password } = await request.json()
+
+  if (!email || !password) {
+    return NextResponse.json(
+      { error: "All fields required" },
+      { status: 400 }
+    )
+  }
 
   const users = await readUsers()
 
-  const user = users.find(
-    u => u.email === email
-  )
+  const user = users.find(u => u.email === email)
 
-  if (!user)
+  if (!user) {
     return NextResponse.json(
       { error: "Invalid credentials" },
       { status: 401 }
     )
+  }
 
   const valid = await verifyPassword(
     password,
     user.password
   )
 
-  if (!valid)
+  if (!valid) {
     return NextResponse.json(
       { error: "Invalid credentials" },
       { status: 401 }
     )
+  }
 
-  const token = createToken(user.id)
+  // 🔥 ВАЖНО: await
+  const token = await createToken(user.id)
 
-  const res = NextResponse.json({
+  const response = NextResponse.json({
     message: "Login successful",
   })
 
-  res.cookies.set("token", token, {
+  response.cookies.set("token", token, {
     httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
     path: "/",
     maxAge: 60 * 60 * 24 * 7,
   })
 
-  return res
+  return response
 }

@@ -25,19 +25,20 @@ export default function AdminPage() {
   const [selectedUserId, setSelectedUserId] = useState<string | null>(null)
 
   useEffect(() => {
-    const userData = localStorage.getItem("rumi_user")
-    if (!userData) {
-      router.push("/")
-      return
-    }
-    const parsedUser = JSON.parse(userData)
-    if (parsedUser.role !== "admin") {
-      router.push("/")
-      return
-    }
-    setUser(parsedUser)
-    loadUsers()
-  }, [router])
+      const loadUser = async () => {
+        const res = await fetch("/api/me")
+        const data = await res.json()
+
+        if (!data.user || data.user.role !== "admin") {
+          router.push("/")
+          return
+        }
+
+        setUser(data.user)
+      }
+
+      loadUser()
+    }, [router])
 
   const loadUsers = async () => {
     try {

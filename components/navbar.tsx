@@ -28,32 +28,26 @@ export function Navbar() {
   }, [])
 
   useEffect(() => {
-    const checkAuth = () => {
-      const user = localStorage.getItem("rumi_user")
-      if (user) {
-        try {
-          const userData = JSON.parse(user)
+    const fetchUser = async () => {
+      try {
+        const res = await fetch("/api/me")
+        const data = await res.json()
+
+        if (data.user) {
           setIsAuthenticated(true)
-          setUsername(userData.username || userData.email)
-          setIsAdmin(userData.role === "admin")
-        } catch {
+          setUsername(data.user.username || data.user.email)
+          setIsAdmin(data.user.role === "admin")
+        } else {
           setIsAuthenticated(false)
           setIsAdmin(false)
         }
-      } else {
+      } catch {
         setIsAuthenticated(false)
         setIsAdmin(false)
       }
     }
 
-    checkAuth()
-    const handleStorage = () => checkAuth()
-    window.addEventListener("storage", handleStorage)
-    window.addEventListener("authChange", handleStorage)
-    return () => {
-      window.removeEventListener("storage", handleStorage)
-      window.removeEventListener("authChange", handleStorage)
-    }
+    fetchUser()
   }, [])
 
   // Добавлен /status
