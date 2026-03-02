@@ -1,36 +1,43 @@
 import { NextRequest, NextResponse } from "next/server"
 import { verifyToken } from "@/lib/auth"
 
-export function middleware(request: NextRequest) {
-  // Получаем IP из заголовков
-  const ip =
-    request.ip ||
-    request.headers.get("x-forwarded-for")?.split(",")[0] ||
-    request.headers.get("x-real-ip") ||
-    "0.0.0.0"
-    const response = NextResponse.next()
-    response.headers.set("x-real-ip", ip)
+export async function middleware(request: NextRequest) {
+  const { pathname } = request.nextUrl
 
-  // Проверяем JWT, если есть
-    const token =
-    request.cookies.get("token")?.value
+  // 🔥 Разрешаем всё публичное
+  const publicPaths = [
+    "/",
+    "/products",
+    "/rules",
+    "/faq",
+    "/about",
+    "/contact",
+    "/api/register",
+    "/api/login",
+  ]
 
-  if (!token)
-    return NextResponse.redirect(
-      new URL("/login", request.url)
-    )
+  if (publicPaths.some(path => pathname.startsWith(path))) {
+    return NextResponse.next()
+  }
 
-  const payload = verifyToken(token)
+  // 🔒 Проверяем только приватные роуты
+  if (pathname.startsWith("/dashboard") || pathname.startsWith("/admin")) {
+    const token = request.cookies.get("token")?.value
 
-  if (!payload)
-    return NextResponse.redirect(
-      new URL("/login", request.url)
-    )
+    if (!token) {
+      return NextResponse.redirect(new URL("/", request.url))
+    }
+
+    const payload = await verifyToken(token)
+
+    if (!payload) {
+      return NextResponse.redirect(new URL("/", request.url))
+    }
+  }
+
   return NextResponse.next()
-  
 }
 
-// Применяем middleware ко всем путям, где нужен IP
 export const config = {
-  matcher: ["/", "/api/security/:path*", "/dashboard/:path*"],
+  matcher: ["/dashboard/:path*", "/admin/:path*"],
 }
