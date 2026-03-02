@@ -1,3 +1,6 @@
+
+<img width="1000" height="300" alt="readmenew" src="https://github.com/user-attachments/assets/e5f82836-fdf4-414d-8a28-3318a92d3ac1" />
+
 # 🚀 Flex --- Open Source Minecraft Server Platform
 
 ![License](https://img.shields.io/github/license/sskwyx/fluxen_flex?style=for-the-badge)
