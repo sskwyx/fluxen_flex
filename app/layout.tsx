@@ -2,15 +2,13 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Space_Mono, Golos_Text } from "next/font/google"
-import { SiteTutorial } from "@/components/SiteTutorial"
-import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
+import { Navbar } from "@/components/layout/navbar"
+import { Footer } from "@/components/layout/footer"
 import { LanguageProvider } from "@/lib/language-context"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
-import { ClientBotGuard } from "@/components/client-bot-guard" // ← только импорт
+import { ClientBotGuard } from "@/components/auth/client-bot-guard"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -53,7 +51,6 @@ export default function RootLayout({
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
             {/* Защита — как обёртка */}
             <ClientBotGuard>
-              <SiteTutorial />
               <Navbar />
               <main className="min-h-screen">{children}</main>
               <Footer />
@@ -61,7 +58,6 @@ export default function RootLayout({
             </ClientBotGuard>
           </Suspense>
         </LanguageProvider>
-        <Analytics />
       </body>
     </html>
   )

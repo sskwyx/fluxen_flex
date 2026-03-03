@@ -4,8 +4,17 @@
     "username": "123",
     "email": "1123@gmail.com",
     "password": "96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e",
-    "balance": 1000000,
+    "balance": 1123123,
     "role": "admin",
     "createdAt": "2026-03-01T16:48:43.925Z"
+  },
+  {
+    "id": "a3973f4c-4fae-4c1a-b900-ac284fef7fc4",
+    "username": "123",
+    "email": "123123123@gmail.com",
+    "password": "$2b$10$788HH1aQ0UGOcnouAiltZ.xKNo52o20Ndl5qZWr2agn1PLLDQILvC",
+    "balance": 0,
+    "role": "admin",
+    "createdAt": "2026-03-02T16:38:49.106Z"
   }
 ]

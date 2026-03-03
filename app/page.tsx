@@ -1,9 +1,9 @@
 "use client"
 
-import { Hero } from "@/components/hero"
+import { Hero } from "@/components/layout/hero"
 import { motion } from "framer-motion"
-import { LauncherPromo } from "@/components/LauncherPromo"
-import { ProVersion } from "@/components/ProVersion"
+import { LauncherPromo } from "@/components/home/launcher-promo"
+import { ProVersion } from "@/components/home/pro-version"
 import { useState } from "react"
 
 // Отзывы

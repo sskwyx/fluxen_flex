@@ -2,7 +2,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { BotCaptcha } from "@/components/bot-captcha"
+import { BotCaptcha } from "@/components/auth/bot-captcha"
 
 export function ClientBotGuard({ children }: { children: React.ReactNode }) {
   const [showCaptcha, setShowCaptcha] = useState(false)
