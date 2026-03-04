@@ -3,6 +3,8 @@
 
 # 🚀 Flex --- Open Source Minecraft Server Platform
 
+
+## [PREVIEW SITE | Превью сайта](https://flex.fluxen.ru)
 ![License](https://img.shields.io/github/license/sskwyx/fluxen_flex?style=for-the-badge)
 ![Stars](https://img.shields.io/github/stars/sskwyx/fluxen_flex?style=for-the-badge)
 ![Issues](https://img.shields.io/github/issues/sskwyx/fluxen_flex?style=for-the-badge)
@@ -10,6 +12,8 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue?style=for-the-badge&logo=typescript)
 ![Minecraft](https://img.shields.io/badge/Minecraft-Server%20Platform-3C8527?style=for-the-badge)
 
+
+[Сайт fluxen](fluxen.ru)
 ------------------------------------------------------------------------
 
 ## 🧩 О проекте
