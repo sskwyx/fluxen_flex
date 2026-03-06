@@ -82,7 +82,7 @@ export default function ContactPage() {
             contact
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold font-mono leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Связь с командой
             <span className="block mt-3 bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent">
               Flex

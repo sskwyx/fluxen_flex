@@ -68,7 +68,7 @@ export default function ProductsPage() {
           className="text-center max-w-3xl mx-auto mb-24"
         >
           <p className="font-mono text-xs tracking-widest text-primary mb-6 uppercase">donate</p>
-          <h1 className="text-4xl md:text-6xl font-bold font-mono leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Улучши игровой
             <span className="block mt-3 bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent">
               опыт

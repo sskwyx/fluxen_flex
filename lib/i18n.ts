@@ -2,17 +2,16 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
-      products: "Products", // Changed from "releases" to "products"
+      products: "Products",
       faq: "FAQ",
       news: "News",
       about: "About",
       contact: "Contact",
-      login: "Login", // Added login navigation
-      register: "Register", // Added register navigation
-      rules: "Rules"
+      login: "Login",
+      register: "Register",
+      rules: "Rules",
     },
     products: {
-      // Renamed from "releases" to "products"
       featured: "Featured Products",
       latest: "Latest tools and updates from the community",
       viewAll: "View All",
@@ -189,7 +188,6 @@ export const translations = {
       date: "Date",
     },
     auth: {
-      // Added authentication translations
       login: {
         title: "Login to flex",
         email: "Email",
@@ -264,20 +262,20 @@ export const translations = {
   ru: {
     nav: {
       home: "Главная",
-      products: "Товары", // Changed from "releases" to "products"
+      products: "Товары",
       faq: "FAQ",
       news: "Новости",
       about: "О нас",
       contact: "Контакты",
-      login: "Вход", // Added login navigation
-      register: "Регистрация", // Added register navigation
-      rules: "Правила"
+      login: "Вход",
+      register: "Регистрация",
+      rules: "Правила",
     },
     hero: {
       subtitle: "Майнкрафт сервер для тех, кто любит создавать вместе!"
     },
     products: {
-      // Renamed from "releases" to "products"
+
       featured: "Избранные релизы",
       latest: "Последние инструменты и обновления от сообщества",
       viewAll: "Смотреть все",

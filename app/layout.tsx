@@ -1,7 +1,6 @@
 // app/layout.tsx
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Space_Mono, Golos_Text } from "next/font/google"
 import "./globals.css"
 import { Navbar } from "@/components/layout/navbar"
 import { Footer } from "@/components/layout/footer"
@@ -9,21 +8,18 @@ import { LanguageProvider } from "@/lib/language-context"
 import { Toaster } from "@/components/ui/toaster"
 import { Suspense } from "react"
 import { ClientBotGuard } from "@/components/auth/client-bot-guard"
+import { Unbounded, Space_Mono } from "next/font/google"
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+const unbounded = Unbounded({
+  subsets: ["latin", "cyrillic"],
+  variable: "--font-unbounded",
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
 })
 
 const spaceMono = Space_Mono({
   weight: ["400", "700"],
   subsets: ["latin"],
   variable: "--font-space-mono",
-})
-
-const golosText = Golos_Text({
-  subsets: ["cyrillic", "latin"],
-  variable: "--font-golos",
 })
 
 export const metadata: Metadata = {
@@ -36,7 +32,7 @@ export const metadata: Metadata = {
     description: "Premium gaming enhancement platform",
     type: "website",
   },
-  generator: 'fluxen.Team',
+  generator: "fluxen.Team",
 }
 
 export default function RootLayout({
@@ -45,11 +41,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.variable} ${spaceMono.variable} ${golosText.variable} font-sans antialiased`}>
+    <html lang="ru" className="dark">
+      <body className={`${unbounded.variable} ${spaceMono.variable} font-sans antialiased`}>
         <LanguageProvider>
           <Suspense fallback={<div className="min-h-screen bg-background" />}>
-            {/* Защита — как обёртка */}
             <ClientBotGuard>
               <Navbar />
               <main className="min-h-screen">{children}</main>

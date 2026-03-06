@@ -59,7 +59,7 @@ export default function AboutPage() {
             about
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold font-mono leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Новый взгляд на
             <span className="block mt-3 bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent">
               Minecraft-проекты

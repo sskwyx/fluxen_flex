@@ -110,7 +110,7 @@ export default function FAQPage() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <p className="font-mono text-xs tracking-widest text-primary mb-6 uppercase">FAQ</p>
-          <h1 className="text-4xl md:text-6xl font-bold font-mono leading-tight">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
             Часто задаваемые
             <span className="block mt-3 bg-gradient-to-r from-white to-white/40 bg-clip-text text-transparent">
               вопросы

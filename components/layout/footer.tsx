@@ -2,130 +2,185 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
-import { 
-  Globe, 
-  MessageCircle, 
-  Shield, 
-  Heart,
-  Copyright 
-} from "lucide-react"
+import { ArrowUpRight, Sparkles, Heart } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
+  const steps = [
+    {
+      tag: "Старт",
+      title: "Зарегистрируйся",
+      desc: "Создай аккаунт за 30 секунд и получи доступ к серверу.",
+      step: "01",
+    },
+    {
+      tag: "Донат",
+      title: "Выбери привилегию",
+      desc: "Усиль своего персонажа уникальными возможностями.",
+      step: "02",
+    },
+    {
+      tag: "Игра",
+      title: "Заходи и играй",
+      desc: "Подключайся к серверу и наслаждайся игрой без ограничений.",
+      step: "03",
+    },
+  ]
+
   return (
-    <footer className="relative border-t border-white/10 bg-black/40 backdrop-blur-2xl mt-32">
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-32 bg-primary/5 rounded-full blur-3xl" />
+    <footer
+      className="relative mt-32 overflow-hidden"
+      style={{ fontFamily: "var(--font-unbounded), system-ui, sans-serif" }}
+    >
+
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute inset-0 bg-black" />
+        <div className="absolute top-0 left-1/3 w-[600px] h-[600px] bg-primary/20 blur-[180px] rounded-full" />
+        <div className="absolute top-0 right-1/4 w-[600px] h-[600px] bg-violet-500/20 blur-[180px] rounded-full" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       </div>
 
-      <div className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+      <div className="relative z-10 max-w-5xl mx-auto px-6 pt-24 pb-10">
+
+        {/* BIG CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="text-center mb-16"
+        >
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="space-y-6"
-          >
-            <div className="flex items-center gap-3">
-              <div className="p-3 rounded-2xl bg-primary/10 border border-primary/20">
-                <Shield className="h-7 w-7 text-primary" />
-              </div>
-              <span className="text-2xl font-black font-mono tracking-tighter">flex</span>
-            </div>
-            <p className="text-white/60 max-w-xs leading-relaxed">
-              Вечный мир. Честная игра. Будущее Minecraft.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            viewport={{ once: true }}
-            className="space-y-5"
+            className="flex items-center justify-center gap-2 mb-8"
           >
-            <h3 className="text-sm uppercase tracking-widest text-white/50 font-mono">Навигация</h3>
-            <ul className="space-y-3">
-              {[
-                { href: "/", label: "Главная" },
-                { href: "/about", label: "О проекте" },
-                { href: "/faq", label: "FAQ" },
-                { href: "/rules", label: "Правила" },
-              ].map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="text-white/70 hover:text-primary transition-colors duration-300 text-lg font-light"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <Sparkles className="w-4 h-4 text-primary" />
+            <span className="text-xs tracking-widest text-primary uppercase">присоединяйся</span>
           </motion.div>
 
-          <motion.div
+          <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
             viewport={{ once: true }}
-            className="space-y-5"
+            transition={{ delay: 0.2 }}
+            className="text-5xl md:text-7xl lg:text-8xl font-black leading-none mb-8"
           >
-            <h3 className="text-sm uppercase tracking-widest text-white/50 font-mono">Сообщество</h3>
-            <div className="flex flex-col gap-4">
-              <a
-                href="https://discord.gg/flex"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 text-white/70 hover:text-primary transition-all group"
-              >
-                <div className="p-3 rounded-2xl bg-white/5 border border-white/10 group-hover:border-primary/40 transition">
-                  <MessageCircle className="h-5 w-5" />
-                </div>
-                <span>Discord</span>
-              </a>
-              <a
-                href="https://vk.com/flexproject"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-4 text-white/70 hover:text-primary transition-all group"
-              >
-                <div className="p-3 rounded-2xl bg-white/5 border border-white/10 group-hover:border-primary/40 transition">
-                  <Globe className="h-5 w-5" />
-                </div>
-                <span>VK</span>
-              </a>
-            </div>
-          </motion.div>
-        </div>
+            Готов начать
+            <span className="block mt-2 bg-gradient-to-r from-white via-white to-white/30 bg-clip-text text-transparent">
+              играть?
+            </span>
+          </motion.h2>
 
-        {/* Нижняя строка — обновлено по твоему желанию */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
+            className="text-white/40 text-lg mb-12 max-w-md mx-auto leading-relaxed"
+          >
+            Вечный мир. Честная игра.{" "}
+            <span className="text-white/70">Будущее Minecraft.</span>
+          </motion.p>
+
+          {/* GLASS CARDS */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12 text-left">
+            {steps.map((card, i) => (
+              <motion.div
+                key={card.step}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.1 + i * 0.1 }}
+                className="group relative rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-6 overflow-hidden"
+              >
+                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-500 bg-gradient-to-br from-primary/15 via-violet-400/8 to-transparent" />
+                <div className="relative z-10">
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="text-[10px] tracking-widest text-primary uppercase px-2.5 py-1 rounded-full bg-primary/10 border border-primary/20">
+                      {card.tag}
+                    </span>
+                    <span className="text-4xl font-black text-white/5">{card.step}</span>
+                  </div>
+                  <h3 className="font-bold text-white text-lg mb-2">{card.title}</h3>
+                  <p className="text-white/40 text-sm leading-relaxed">{card.desc}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* BUTTONS */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-3"
+          >
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 rounded-full bg-white text-black px-8 py-4 font-bold text-sm hover:scale-105 transition-all duration-200 shadow-2xl shadow-white/10"
+            >Получить донат<ArrowUpRight className="w-4 h-4" /></Link>
+
+            <a
+              href="https://t.me/fluxen_tg"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 hover:border-white/20 px-8 py-4 text-sm text-white/60 hover:text-white transition-all duration-200"
+            >Написать в Telegram</a>
+          </motion.div>
+        </motion.div>
+
+        {/* DIVIDER */}
+        <div className="h-px bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8" />
+
+        {/* BOTTOM */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
           viewport={{ once: true }}
-          className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-white/40 text-sm"
+          transition={{ delay: 0.3 }}
+          className="flex flex-col sm:flex-row items-center justify-between gap-4"
         >
-          <div className="flex items-center gap-2">
-            <Copyright className="h-4 w-4" />
-            <span>{currentYear} flex project. Все права защищены.</span>
+          <div className="flex items-center gap-6">
+            <Link href="/" className="flex items-center gap-2 group">
+              <div className="w-6 h-6 rounded-lg bg-primary/15 border border-primary/20 flex items-center justify-center">
+                <Sparkles className="w-3 h-3 text-primary" />
+              </div>
+              <span className="text-sm font-bold text-white/60 group-hover:text-white transition-colors">flex</span>
+            </Link>
+            <span className="text-xs text-white/20">© {currentYear} flex project</span>
           </div>
 
-          <Link
-            href="https://t.me/fluxen_tg"
+          <div className="flex items-center gap-6">
+            {[
+              { href: "/faq",     label: "FAQ" },
+              { href: "/rules",   label: "Правила" },
+              { href: "/contact", label: "Контакты" },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-xs text-white/25 hover:text-white/60 transition-colors duration-200"
+              >{item.label}</Link>
+            ))}
+          </div>
+
+          <a
+            href="https://fluxen.ru"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 hover:text-primary transition-colors group"
+            className="flex items-center gap-1.5 text-xs text-white/20 hover:text-white/50 transition-colors group"
           >
-            <span>Сделано с</span>
-            <Heart className="h-4 w-4 text-red-500 fill-red-500 group-hover:scale-110 transition" />
-            <span className="underline decoration-white/30 group-hover:decoration-primary">
-              by fluxen
-            </span>
-          </Link>
+            <span>by</span>
+            <Heart className="w-3 h-3 text-red-500 fill-red-500 group-hover:scale-110 transition-transform" />
+            <span className="group-hover:text-primary transition-colors">fluxen</span>
+          </a>
         </motion.div>
+
       </div>
     </footer>
   )
