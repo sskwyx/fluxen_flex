@@ -1,5 +1,23 @@
 [
   {
+    "id": "mmg8dikmrov1",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",
+    "eventType": "captcha_success",
+    "captchaAttempts": 1,
+    "referrer": null,
+    "timestamp": "2026-03-07T11:19:07.846Z"
+  },
+  {
+    "id": "mmg8dek3lrgd",
+    "ip": "0.0.0.0",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",
+    "eventType": "direct_access_suspicious",
+    "captchaAttempts": 0,
+    "referrer": null,
+    "timestamp": "2026-03-07T11:19:02.643Z"
+  },
+  {
     "id": "mm7ykjcezplb",
     "ip": "::1",
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0",

@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { LauncherPromo } from "@/components/home/launcher-promo"
 import { ProVersion } from "@/components/home/pro-version"
 import { useState } from "react"
+import FlexModal from "@/components/FlexModal";
 
 // Отзывы
 const playerTestimonials = [
@@ -31,6 +32,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <FlexModal />
 
       {/* Саркастичный блок с отзывами */}
       <section className="py-28 md:py-40 relative overflow-hidden">
