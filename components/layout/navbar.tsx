@@ -333,7 +333,7 @@ export function Navbar() {
                     </button>
                   </div>
                 )}
-                {/* Язык в мобиле */}
+                {/* Язык в мобиле new */}
                 <button onClick={toggleLanguage}
                   className="flex items-center gap-2.5 px-3 py-2.5 rounded-2xl font-mono text-xs text-white/35 hover:text-white hover:bg-white/5 transition-all mt-0.5">
                   <div className="w-4 h-4 rounded-full overflow-hidden shrink-0">
