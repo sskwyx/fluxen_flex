@@ -13,7 +13,7 @@
 ![Minecraft](https://img.shields.io/badge/Minecraft-Server%20Platform-3C8527?style=for-the-badge)
 
 
-[Сайт fluxen](fluxen.ru)
+[Сайт fluxen](https://fluxen.ru)
 ------------------------------------------------------------------------
 
 ## 🧩 О проекте
